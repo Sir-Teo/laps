@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Line Optimizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Racing Line Optimizer</h1>
+        <div class="controls">
+            <div class="control-group">
+                <button id="drawInnerBtn" class="btn active">Draw Inner Boundary</button>
+                <button id="drawOuterBtn" class="btn">Draw Outer Boundary</button>
+                <button id="clearBtn" class="btn danger">Clear Track</button>
+            </div>
+            <div class="control-group">
+                <button id="computeBtn" class="btn primary">Compute Fastest Lap</button>
+                <button id="resetBtn" class="btn">Reset</button>
+            </div>
+            <div class="info">
+                <p>1. Draw the inner track boundary (blue)</p>
+                <p>2. Draw the outer track boundary (red)</p>
+                <p>3. Click "Compute Fastest Lap" to see the optimal racing line</p>
+            </div>
+        </div>
+        <canvas id="trackCanvas" width="1000" height="600"></canvas>
+        <div class="status">
+            <span id="statusText">Ready to draw inner boundary</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
